@@ -1,0 +1,3 @@
+garbled_circuit_main.cpp:335 [32mINFO[0m: Connect Bob's client to Alice's server on 127.0.0.1:1234
+garbled_circuit_main.cpp:349 [32mINFO[0m: Bob's output = 13
+garbled_circuit_main.cpp:350 [32mINFO[0m: Total Bob time (cc) = 1570110

@@ -1,0 +1,2 @@
+#!/bin/bash
+(sleep 0.00; $1 --alice --scd_file scd/hamming_32bit_1cc.scd --input FF55AA77 --log2std ${@:2}) &  $1 --bob --scd_file scd/hamming_32bit_1cc.scd --input 12345678 --log2std ${@:2}
