@@ -109,6 +109,14 @@ int GarbleStr(const string& scd_file_address, const string& p_init_str,
   BIGNUM* e_input = BN_new();
   BIGNUM* output_bn_c = BN_new();
 
+ CHECK(
+      ParseInitInputStr(init_str, input_str_bob, garbled_circuitb.e_init_size,
+                        garbled_circuitb.e_input_size, clock_cycles, &e_init,
+                        &e_input));
+  CHECK(
+      ParseInitInputStr(p_init_str, p_input_str, garbled_circuitb.p_init_size,
+                        garbled_circuitb.p_input_size, clock_cycles, &p_init_c,
+                        &p_input_c));
 
   // global key
   PRG pg;
@@ -158,7 +166,11 @@ input_labels = (block*) shmat(shmid_inpl,(void*)0,0);
 //Here 1
   for (uint i = 0; i < garbled_circuit.g_init_size; i++) {
     if (i >= (uint) BN_num_bits(g_init) || BN_is_bit_set(g_init, i) == 0) {
+           init_labels_c[i]=init_labels[i * 2 + 0];
+
     } else {
+           init_labels_c[i]=init_labels[i * 2 + 1];
+
     }
   }
 // g_input
@@ -698,7 +710,7 @@ int shmid_gt = shmget(key_gt,garbled_tables_size,0666|IPC_CREAT);
             int64_t label_indexb = wire_indexb
                 - (int64_t) garbled_circuitb.get_p_init_hi_index();
 
-            wires_bob[dff_biasb + i] = init_labels[label_indexb];
+            wires_bob[dff_biasb + i] = init_labels_c[label_indexb];
             wires_valb[dff_biasb + i] = SECRET;
           }
         } else {
