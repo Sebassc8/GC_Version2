@@ -32,7 +32,6 @@
  You should have received a copy of the GNU General Public License
  along with TinyGarble.  If not, see <http://www.gnu.org/licenses/>.
  */
-//#include "util.h"
 #include "tinygarble_config.h"
 #include "log.h"
 #include <boost/program_options.hpp>
@@ -40,10 +39,7 @@
 #include <cstdlib>
 #include <ctime>
 #include "emp-tool/emp-tool.h"
-//#include "crypto/OT_extension.h"
 #include "garbled_circuit.h"
-//#include "scd/scd.h"
-//#include "tcpip/tcpip.h"
 #include <chrono>
 
 namespace po = boost::program_options;
@@ -54,19 +50,7 @@ int main(int argc, char* argv[]) {
 
   LogInitial(argc, argv);
   
- 	int length = 1;
-block *b0 = new block[length];
-block *b1 = new block[length];
-block *r = new block[length];
-	PRG prg(fix_key);
-
-prg.random_block(b0, length);
-prg.random_block(b1, length);
-	bool *b = new bool[length];
-	PRG prg2;
- prg2.random_bool(b, length);
 int party;
-//NetIO *io;
   int port;
   string scd_file_address;
   string server_ip;
@@ -184,9 +168,9 @@ int party;
   string input_str = ReadFileOrPassHex(input_f_hex_str);
   string input_str_bob = ReadFileOrPassHex(input_f_hex_str_bob);
 
-const char* chr = server_ip.c_str();
-cout<<"Address is "<<chr<<endl;
-cout<<"port is " <<port<<endl;
+//const char* chr = server_ip.c_str();
+//cout<<"Address is "<<chr<<endl;
+//cout<<"port is " <<port<<endl;
  // if (vm.count("alice")) {
   
 
@@ -198,7 +182,7 @@ cout<<"port is " <<port<<endl;
              	//io->flush();
 	//io->sync();
 
- cout << "Open Alice's server on port: " << port << endl;
+ //cout << "Open Alice's server on port: " << port << endl;
 
                   
 
@@ -264,10 +248,7 @@ cout  << "Bob's output = " << output_str_bob << endl;
 //  delete ferretcot;
 
 //  }
-delete[] b0;
-	delete[] b1;
-	delete[] r;
-	delete[] b;
+
   //delete io;
   LogFinish();
   return SUCCESS;

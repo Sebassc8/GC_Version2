@@ -80,7 +80,7 @@ TinyGarble_EXTERNAL_OBJECTS = \
 "/home/soler/FerretOT/emp-ot/testing/CMakeFiles/BN_lib.dir/BN.cpp.o" \
 "/home/soler/FerretOT/emp-ot/testing/CMakeFiles/Garbled_Circuit_Garbled_Circuit.dir/garbled_circuit.cpp.o" \
 "/home/soler/FerretOT/emp-ot/testing/CMakeFiles/Garbled_Circuit_Garbled_Circuit_Util.dir/garbled_circuit_util.cpp.o" \
-"/home/soler/FerretOT/emp-ot/testing/CMakeFiles/Garbled_Circuit_Garbled_Circuit_High_Mem.dir/garbled_circuit_high_mem.cpp.o" \
+"/home/soler/FerretOT/emp-ot/testing/CMakeFiles/Garbled_Circuit_Garbled_Circuit_High_Mem.dir/garbled_circuit_op.cpp.o" \
 "/home/soler/FerretOT/emp-ot/testing/scd/CMakeFiles/SCD_SCD.dir/scd.cpp.o" \
 "/home/soler/FerretOT/emp-ot/testing/CMakeFiles/Util_Log.dir/log.cpp.o"
 
@@ -89,7 +89,7 @@ TinyGarble: CMakeFiles/Util_Util.dir/util.cpp.o
 TinyGarble: CMakeFiles/BN_lib.dir/BN.cpp.o
 TinyGarble: CMakeFiles/Garbled_Circuit_Garbled_Circuit.dir/garbled_circuit.cpp.o
 TinyGarble: CMakeFiles/Garbled_Circuit_Garbled_Circuit_Util.dir/garbled_circuit_util.cpp.o
-TinyGarble: CMakeFiles/Garbled_Circuit_Garbled_Circuit_High_Mem.dir/garbled_circuit_high_mem.cpp.o
+TinyGarble: CMakeFiles/Garbled_Circuit_Garbled_Circuit_High_Mem.dir/garbled_circuit_op.cpp.o
 TinyGarble: scd/CMakeFiles/SCD_SCD.dir/scd.cpp.o
 TinyGarble: CMakeFiles/Util_Log.dir/log.cpp.o
 TinyGarble: CMakeFiles/TinyGarble.dir/build.make

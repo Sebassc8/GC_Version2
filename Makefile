@@ -122,17 +122,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named TinyGarble
+# Target rules for targets named RUN_EXEC
 
 # Build rule for target.
-TinyGarble: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 TinyGarble
-.PHONY : TinyGarble
+RUN_EXEC: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 RUN_EXEC
+.PHONY : RUN_EXEC
 
 # fast build rule for target.
-TinyGarble/fast:
-	$(MAKE) -f CMakeFiles/TinyGarble.dir/build.make CMakeFiles/TinyGarble.dir/build
-.PHONY : TinyGarble/fast
+RUN_EXEC/fast:
+	$(MAKE) -f CMakeFiles/RUN_EXEC.dir/build.make CMakeFiles/RUN_EXEC.dir/build
+.PHONY : RUN_EXEC/fast
 
 #=============================================================================
 # Target rules for targets named BN_lib
@@ -357,40 +357,13 @@ garbled_circuit.cpp.s:
 	$(MAKE) -f CMakeFiles/Garbled_Circuit_Garbled_Circuit.dir/build.make CMakeFiles/Garbled_Circuit_Garbled_Circuit.dir/garbled_circuit.cpp.s
 .PHONY : garbled_circuit.cpp.s
 
-garbled_circuit_high_mem.o: garbled_circuit_high_mem.cpp.o
-
-.PHONY : garbled_circuit_high_mem.o
-
-# target to build an object file
-garbled_circuit_high_mem.cpp.o:
-	$(MAKE) -f CMakeFiles/Garbled_Circuit_Garbled_Circuit_High_Mem.dir/build.make CMakeFiles/Garbled_Circuit_Garbled_Circuit_High_Mem.dir/garbled_circuit_high_mem.cpp.o
-.PHONY : garbled_circuit_high_mem.cpp.o
-
-garbled_circuit_high_mem.i: garbled_circuit_high_mem.cpp.i
-
-.PHONY : garbled_circuit_high_mem.i
-
-# target to preprocess a source file
-garbled_circuit_high_mem.cpp.i:
-	$(MAKE) -f CMakeFiles/Garbled_Circuit_Garbled_Circuit_High_Mem.dir/build.make CMakeFiles/Garbled_Circuit_Garbled_Circuit_High_Mem.dir/garbled_circuit_high_mem.cpp.i
-.PHONY : garbled_circuit_high_mem.cpp.i
-
-garbled_circuit_high_mem.s: garbled_circuit_high_mem.cpp.s
-
-.PHONY : garbled_circuit_high_mem.s
-
-# target to generate assembly for a file
-garbled_circuit_high_mem.cpp.s:
-	$(MAKE) -f CMakeFiles/Garbled_Circuit_Garbled_Circuit_High_Mem.dir/build.make CMakeFiles/Garbled_Circuit_Garbled_Circuit_High_Mem.dir/garbled_circuit_high_mem.cpp.s
-.PHONY : garbled_circuit_high_mem.cpp.s
-
 garbled_circuit_main.o: garbled_circuit_main.cpp.o
 
 .PHONY : garbled_circuit_main.o
 
 # target to build an object file
 garbled_circuit_main.cpp.o:
-	$(MAKE) -f CMakeFiles/TinyGarble.dir/build.make CMakeFiles/TinyGarble.dir/garbled_circuit_main.cpp.o
+	$(MAKE) -f CMakeFiles/RUN_EXEC.dir/build.make CMakeFiles/RUN_EXEC.dir/garbled_circuit_main.cpp.o
 .PHONY : garbled_circuit_main.cpp.o
 
 garbled_circuit_main.i: garbled_circuit_main.cpp.i
@@ -399,7 +372,7 @@ garbled_circuit_main.i: garbled_circuit_main.cpp.i
 
 # target to preprocess a source file
 garbled_circuit_main.cpp.i:
-	$(MAKE) -f CMakeFiles/TinyGarble.dir/build.make CMakeFiles/TinyGarble.dir/garbled_circuit_main.cpp.i
+	$(MAKE) -f CMakeFiles/RUN_EXEC.dir/build.make CMakeFiles/RUN_EXEC.dir/garbled_circuit_main.cpp.i
 .PHONY : garbled_circuit_main.cpp.i
 
 garbled_circuit_main.s: garbled_circuit_main.cpp.s
@@ -408,8 +381,35 @@ garbled_circuit_main.s: garbled_circuit_main.cpp.s
 
 # target to generate assembly for a file
 garbled_circuit_main.cpp.s:
-	$(MAKE) -f CMakeFiles/TinyGarble.dir/build.make CMakeFiles/TinyGarble.dir/garbled_circuit_main.cpp.s
+	$(MAKE) -f CMakeFiles/RUN_EXEC.dir/build.make CMakeFiles/RUN_EXEC.dir/garbled_circuit_main.cpp.s
 .PHONY : garbled_circuit_main.cpp.s
+
+garbled_circuit_op.o: garbled_circuit_op.cpp.o
+
+.PHONY : garbled_circuit_op.o
+
+# target to build an object file
+garbled_circuit_op.cpp.o:
+	$(MAKE) -f CMakeFiles/Garbled_Circuit_Garbled_Circuit_High_Mem.dir/build.make CMakeFiles/Garbled_Circuit_Garbled_Circuit_High_Mem.dir/garbled_circuit_op.cpp.o
+.PHONY : garbled_circuit_op.cpp.o
+
+garbled_circuit_op.i: garbled_circuit_op.cpp.i
+
+.PHONY : garbled_circuit_op.i
+
+# target to preprocess a source file
+garbled_circuit_op.cpp.i:
+	$(MAKE) -f CMakeFiles/Garbled_Circuit_Garbled_Circuit_High_Mem.dir/build.make CMakeFiles/Garbled_Circuit_Garbled_Circuit_High_Mem.dir/garbled_circuit_op.cpp.i
+.PHONY : garbled_circuit_op.cpp.i
+
+garbled_circuit_op.s: garbled_circuit_op.cpp.s
+
+.PHONY : garbled_circuit_op.s
+
+# target to generate assembly for a file
+garbled_circuit_op.cpp.s:
+	$(MAKE) -f CMakeFiles/Garbled_Circuit_Garbled_Circuit_High_Mem.dir/build.make CMakeFiles/Garbled_Circuit_Garbled_Circuit_High_Mem.dir/garbled_circuit_op.cpp.s
+.PHONY : garbled_circuit_op.cpp.s
 
 garbled_circuit_util.o: garbled_circuit_util.cpp.o
 
@@ -498,7 +498,7 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... TinyGarble"
+	@echo "... RUN_EXEC"
 	@echo "... BN_lib"
 	@echo "... rebuild_cache"
 	@echo "... Garbled_Circuit_Garbled_Circuit"
@@ -521,12 +521,12 @@ help:
 	@echo "... garbled_circuit.o"
 	@echo "... garbled_circuit.i"
 	@echo "... garbled_circuit.s"
-	@echo "... garbled_circuit_high_mem.o"
-	@echo "... garbled_circuit_high_mem.i"
-	@echo "... garbled_circuit_high_mem.s"
 	@echo "... garbled_circuit_main.o"
 	@echo "... garbled_circuit_main.i"
 	@echo "... garbled_circuit_main.s"
+	@echo "... garbled_circuit_op.o"
+	@echo "... garbled_circuit_op.i"
+	@echo "... garbled_circuit_op.s"
 	@echo "... garbled_circuit_util.o"
 	@echo "... garbled_circuit_util.i"
 	@echo "... garbled_circuit_util.s"

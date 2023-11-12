@@ -5,7 +5,7 @@ CMakeFiles/Garbled_Circuit_Garbled_Circuit.dir/garbled_circuit.cpp.o: BN.h
 CMakeFiles/Garbled_Circuit_Garbled_Circuit.dir/garbled_circuit.cpp.o: common.h
 CMakeFiles/Garbled_Circuit_Garbled_Circuit.dir/garbled_circuit.cpp.o: garbled_circuit.cpp
 CMakeFiles/Garbled_Circuit_Garbled_Circuit.dir/garbled_circuit.cpp.o: garbled_circuit.h
-CMakeFiles/Garbled_Circuit_Garbled_Circuit.dir/garbled_circuit.cpp.o: garbled_circuit_high_mem.h
+CMakeFiles/Garbled_Circuit_Garbled_Circuit.dir/garbled_circuit.cpp.o: garbled_circuit_op.h
 CMakeFiles/Garbled_Circuit_Garbled_Circuit.dir/garbled_circuit.cpp.o: garbled_circuit_util.h
 CMakeFiles/Garbled_Circuit_Garbled_Circuit.dir/garbled_circuit.cpp.o: log.h
 CMakeFiles/Garbled_Circuit_Garbled_Circuit.dir/garbled_circuit.cpp.o: minunit.h

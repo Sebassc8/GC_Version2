@@ -41,14 +41,16 @@ scd/scd_evaluator.h
 /home/soler/FerretOT/emp-ot/testing/scd/scd_evaluator.h
 garbled_circuit_util.h
 /home/soler/FerretOT/emp-ot/testing/garbled_circuit_util.h
-garbled_circuit_high_mem.h
-/home/soler/FerretOT/emp-ot/testing/garbled_circuit_high_mem.h
+garbled_circuit_op.h
+/home/soler/FerretOT/emp-ot/testing/garbled_circuit_op.h
 chrono
 -
 emp-tool/emp-tool.h
 -
-emp-ot/emp-ot.h
-/home/soler/FerretOT/emp-ot/testing/emp-ot/emp-ot.h
+sys/ipc.h
+-
+sys/shm.h
+-
 
 /home/soler/FerretOT/emp-ot/testing/garbled_circuit.h
 cstdint
@@ -66,7 +68,7 @@ emp-ot/emp-ot.h
 util.h
 /home/soler/FerretOT/emp-ot/testing/util.h
 
-/home/soler/FerretOT/emp-ot/testing/garbled_circuit_high_mem.h
+/home/soler/FerretOT/emp-ot/testing/garbled_circuit_op.h
 openssl/bn.h
 -
 garbled_circuit_util.h

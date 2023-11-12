@@ -91,13 +91,13 @@ add_library (Util_Util OBJECT
 add_library (Garbled_Circuit_Garbled_Circuit_Util OBJECT
   "garbled_circuit_util.cpp")
 add_library (Garbled_Circuit_Garbled_Circuit_High_Mem OBJECT
-  "garbled_circuit_high_mem.cpp")  
+  "garbled_circuit_op.cpp")  
 add_library (Garbled_Circuit_Garbled_Circuit OBJECT
   "garbled_circuit.cpp")
   add_library (BN_lib OBJECT
   "BN.cpp")
 
-add_executable(TinyGarble
+add_executable(RUN_EXEC
   "garbled_circuit_main.cpp"
   "$<TARGET_OBJECTS:Util_Util>"
   "$<TARGET_OBJECTS:BN_lib>"
@@ -108,10 +108,10 @@ add_executable(TinyGarble
   "$<TARGET_OBJECTS:Util_Log>")
 
   if (OPENSSL_FOUND)
-	target_link_libraries(TinyGarble ${OPENSSL_LIBRARIES})
+	target_link_libraries(RUN_EXEC ${OPENSSL_LIBRARIES})
 endif (OPENSSL_FOUND)
 if (Boost_FOUND)
-  target_link_libraries(TinyGarble ${Boost_LIBRARIES})
+  target_link_libraries(RUN_EXEC ${Boost_LIBRARIES})
 endif (Boost_FOUND)
 
   add_subdirectory ("scd")

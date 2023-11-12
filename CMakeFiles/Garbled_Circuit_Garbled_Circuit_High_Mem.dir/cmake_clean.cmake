@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Garbled_Circuit_Garbled_Circuit_High_Mem.dir/garbled_circuit_high_mem.cpp.o"
+  "CMakeFiles/Garbled_Circuit_Garbled_Circuit_High_Mem.dir/garbled_circuit_op.cpp.o"
 )
 
 # Per-language clean rules from dependency scanning.

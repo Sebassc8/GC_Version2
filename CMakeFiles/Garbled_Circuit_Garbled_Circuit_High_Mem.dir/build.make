@@ -57,20 +57,20 @@ include CMakeFiles/Garbled_Circuit_Garbled_Circuit_High_Mem.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Garbled_Circuit_Garbled_Circuit_High_Mem.dir/flags.make
 
-CMakeFiles/Garbled_Circuit_Garbled_Circuit_High_Mem.dir/garbled_circuit_high_mem.cpp.o: CMakeFiles/Garbled_Circuit_Garbled_Circuit_High_Mem.dir/flags.make
-CMakeFiles/Garbled_Circuit_Garbled_Circuit_High_Mem.dir/garbled_circuit_high_mem.cpp.o: garbled_circuit_high_mem.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/soler/FerretOT/emp-ot/testing/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Garbled_Circuit_Garbled_Circuit_High_Mem.dir/garbled_circuit_high_mem.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Garbled_Circuit_Garbled_Circuit_High_Mem.dir/garbled_circuit_high_mem.cpp.o -c /home/soler/FerretOT/emp-ot/testing/garbled_circuit_high_mem.cpp
+CMakeFiles/Garbled_Circuit_Garbled_Circuit_High_Mem.dir/garbled_circuit_op.cpp.o: CMakeFiles/Garbled_Circuit_Garbled_Circuit_High_Mem.dir/flags.make
+CMakeFiles/Garbled_Circuit_Garbled_Circuit_High_Mem.dir/garbled_circuit_op.cpp.o: garbled_circuit_op.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/soler/FerretOT/emp-ot/testing/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Garbled_Circuit_Garbled_Circuit_High_Mem.dir/garbled_circuit_op.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Garbled_Circuit_Garbled_Circuit_High_Mem.dir/garbled_circuit_op.cpp.o -c /home/soler/FerretOT/emp-ot/testing/garbled_circuit_op.cpp
 
-CMakeFiles/Garbled_Circuit_Garbled_Circuit_High_Mem.dir/garbled_circuit_high_mem.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Garbled_Circuit_Garbled_Circuit_High_Mem.dir/garbled_circuit_high_mem.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/soler/FerretOT/emp-ot/testing/garbled_circuit_high_mem.cpp > CMakeFiles/Garbled_Circuit_Garbled_Circuit_High_Mem.dir/garbled_circuit_high_mem.cpp.i
+CMakeFiles/Garbled_Circuit_Garbled_Circuit_High_Mem.dir/garbled_circuit_op.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Garbled_Circuit_Garbled_Circuit_High_Mem.dir/garbled_circuit_op.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/soler/FerretOT/emp-ot/testing/garbled_circuit_op.cpp > CMakeFiles/Garbled_Circuit_Garbled_Circuit_High_Mem.dir/garbled_circuit_op.cpp.i
 
-CMakeFiles/Garbled_Circuit_Garbled_Circuit_High_Mem.dir/garbled_circuit_high_mem.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Garbled_Circuit_Garbled_Circuit_High_Mem.dir/garbled_circuit_high_mem.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/soler/FerretOT/emp-ot/testing/garbled_circuit_high_mem.cpp -o CMakeFiles/Garbled_Circuit_Garbled_Circuit_High_Mem.dir/garbled_circuit_high_mem.cpp.s
+CMakeFiles/Garbled_Circuit_Garbled_Circuit_High_Mem.dir/garbled_circuit_op.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Garbled_Circuit_Garbled_Circuit_High_Mem.dir/garbled_circuit_op.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/soler/FerretOT/emp-ot/testing/garbled_circuit_op.cpp -o CMakeFiles/Garbled_Circuit_Garbled_Circuit_High_Mem.dir/garbled_circuit_op.cpp.s
 
-Garbled_Circuit_Garbled_Circuit_High_Mem: CMakeFiles/Garbled_Circuit_Garbled_Circuit_High_Mem.dir/garbled_circuit_high_mem.cpp.o
+Garbled_Circuit_Garbled_Circuit_High_Mem: CMakeFiles/Garbled_Circuit_Garbled_Circuit_High_Mem.dir/garbled_circuit_op.cpp.o
 Garbled_Circuit_Garbled_Circuit_High_Mem: CMakeFiles/Garbled_Circuit_Garbled_Circuit_High_Mem.dir/build.make
 
 .PHONY : Garbled_Circuit_Garbled_Circuit_High_Mem

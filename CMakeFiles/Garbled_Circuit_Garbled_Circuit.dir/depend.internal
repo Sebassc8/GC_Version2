@@ -6,7 +6,7 @@ CMakeFiles/Garbled_Circuit_Garbled_Circuit.dir/garbled_circuit.cpp.o
  /home/soler/FerretOT/emp-ot/testing/common.h
  /home/soler/FerretOT/emp-ot/testing/garbled_circuit.cpp
  /home/soler/FerretOT/emp-ot/testing/garbled_circuit.h
- /home/soler/FerretOT/emp-ot/testing/garbled_circuit_high_mem.h
+ /home/soler/FerretOT/emp-ot/testing/garbled_circuit_op.h
  /home/soler/FerretOT/emp-ot/testing/garbled_circuit_util.h
  /home/soler/FerretOT/emp-ot/testing/log.h
  /home/soler/FerretOT/emp-ot/testing/minunit.h

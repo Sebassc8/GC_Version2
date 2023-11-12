@@ -26,9 +26,9 @@ emp-tool/emp-tool.h
 emp-ot/emp-ot.h
 /home/soler/FerretOT/emp-ot/testing/emp-ot/emp-ot.h
 
-/home/soler/FerretOT/emp-ot/testing/garbled_circuit_high_mem.cpp
-garbled_circuit_high_mem.h
-/home/soler/FerretOT/emp-ot/testing/garbled_circuit_high_mem.h
+/home/soler/FerretOT/emp-ot/testing/garbled_circuit_op.cpp
+garbled_circuit_op.h
+/home/soler/FerretOT/emp-ot/testing/garbled_circuit_op.h
 scd/scd.h
 /home/soler/FerretOT/emp-ot/testing/scd/scd.h
 scd/scd_evaluator.h
@@ -48,7 +48,7 @@ emp-tool/emp-tool.h
 emp-ot/emp-ot.h
 /home/soler/FerretOT/emp-ot/testing/emp-ot/emp-ot.h
 
-/home/soler/FerretOT/emp-ot/testing/garbled_circuit_high_mem.h
+/home/soler/FerretOT/emp-ot/testing/garbled_circuit_op.h
 openssl/bn.h
 -
 garbled_circuit_util.h

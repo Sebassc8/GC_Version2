@@ -63,6 +63,11 @@ typedef struct BlockPair {
   block label1;
 } BlockPair;
 
+typedef struct BitTag {
+  block message;
+  block bit_tag;
+} BitTag;
+
 /**
  * @brief Used to store two-row table with gid
  */

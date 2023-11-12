@@ -53,7 +53,7 @@ CMAKE_BINARY_DIR = /home/soler/FerretOT/emp-ot/testing
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/TinyGarble.dir/all
+all: CMakeFiles/RUN_EXEC.dir/all
 all: CMakeFiles/BN_lib.dir/all
 all: CMakeFiles/Garbled_Circuit_Garbled_Circuit.dir/all
 all: CMakeFiles/Garbled_Circuit_Garbled_Circuit_High_Mem.dir/all
@@ -70,7 +70,7 @@ preinstall: scd/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/TinyGarble.dir/clean
+clean: CMakeFiles/RUN_EXEC.dir/clean
 clean: CMakeFiles/BN_lib.dir/clean
 clean: CMakeFiles/Garbled_Circuit_Garbled_Circuit.dir/clean
 clean: CMakeFiles/Garbled_Circuit_Garbled_Circuit_High_Mem.dir/clean
@@ -112,37 +112,37 @@ scd/clean: scd/CMakeFiles/SCD_ParseNetlist.dir/clean
 .PHONY : scd/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/TinyGarble.dir
+# Target rules for target CMakeFiles/RUN_EXEC.dir
 
 # All Build rule for target.
-CMakeFiles/TinyGarble.dir/all: CMakeFiles/BN_lib.dir/all
-CMakeFiles/TinyGarble.dir/all: CMakeFiles/Garbled_Circuit_Garbled_Circuit.dir/all
-CMakeFiles/TinyGarble.dir/all: CMakeFiles/Garbled_Circuit_Garbled_Circuit_High_Mem.dir/all
-CMakeFiles/TinyGarble.dir/all: CMakeFiles/Garbled_Circuit_Garbled_Circuit_Util.dir/all
-CMakeFiles/TinyGarble.dir/all: CMakeFiles/Util_Util.dir/all
-CMakeFiles/TinyGarble.dir/all: CMakeFiles/Util_Log.dir/all
-CMakeFiles/TinyGarble.dir/all: scd/CMakeFiles/SCD_SCD.dir/all
-	$(MAKE) -f CMakeFiles/TinyGarble.dir/build.make CMakeFiles/TinyGarble.dir/depend
-	$(MAKE) -f CMakeFiles/TinyGarble.dir/build.make CMakeFiles/TinyGarble.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/soler/FerretOT/emp-ot/testing/CMakeFiles --progress-num=12,13 "Built target TinyGarble"
-.PHONY : CMakeFiles/TinyGarble.dir/all
+CMakeFiles/RUN_EXEC.dir/all: scd/CMakeFiles/SCD_SCD.dir/all
+CMakeFiles/RUN_EXEC.dir/all: CMakeFiles/BN_lib.dir/all
+CMakeFiles/RUN_EXEC.dir/all: CMakeFiles/Garbled_Circuit_Garbled_Circuit.dir/all
+CMakeFiles/RUN_EXEC.dir/all: CMakeFiles/Garbled_Circuit_Garbled_Circuit_High_Mem.dir/all
+CMakeFiles/RUN_EXEC.dir/all: CMakeFiles/Garbled_Circuit_Garbled_Circuit_Util.dir/all
+CMakeFiles/RUN_EXEC.dir/all: CMakeFiles/Util_Util.dir/all
+CMakeFiles/RUN_EXEC.dir/all: CMakeFiles/Util_Log.dir/all
+	$(MAKE) -f CMakeFiles/RUN_EXEC.dir/build.make CMakeFiles/RUN_EXEC.dir/depend
+	$(MAKE) -f CMakeFiles/RUN_EXEC.dir/build.make CMakeFiles/RUN_EXEC.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/soler/FerretOT/emp-ot/testing/CMakeFiles --progress-num=5,6 "Built target RUN_EXEC"
+.PHONY : CMakeFiles/RUN_EXEC.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/TinyGarble.dir/rule: cmake_check_build_system
+CMakeFiles/RUN_EXEC.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/soler/FerretOT/emp-ot/testing/CMakeFiles 9
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/TinyGarble.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/RUN_EXEC.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/soler/FerretOT/emp-ot/testing/CMakeFiles 0
-.PHONY : CMakeFiles/TinyGarble.dir/rule
+.PHONY : CMakeFiles/RUN_EXEC.dir/rule
 
 # Convenience name for target.
-TinyGarble: CMakeFiles/TinyGarble.dir/rule
+RUN_EXEC: CMakeFiles/RUN_EXEC.dir/rule
 
-.PHONY : TinyGarble
+.PHONY : RUN_EXEC
 
 # clean rule for target.
-CMakeFiles/TinyGarble.dir/clean:
-	$(MAKE) -f CMakeFiles/TinyGarble.dir/build.make CMakeFiles/TinyGarble.dir/clean
-.PHONY : CMakeFiles/TinyGarble.dir/clean
+CMakeFiles/RUN_EXEC.dir/clean:
+	$(MAKE) -f CMakeFiles/RUN_EXEC.dir/build.make CMakeFiles/RUN_EXEC.dir/clean
+.PHONY : CMakeFiles/RUN_EXEC.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/BN_lib.dir
@@ -310,11 +310,11 @@ CMakeFiles/Util_Log.dir/clean:
 # Target rules for target scd/CMakeFiles/V2SCD_Main.dir
 
 # All Build rule for target.
-scd/CMakeFiles/V2SCD_Main.dir/all: CMakeFiles/Util_Log.dir/all
 scd/CMakeFiles/V2SCD_Main.dir/all: scd/CMakeFiles/SCD_V2SCD.dir/all
 scd/CMakeFiles/V2SCD_Main.dir/all: scd/CMakeFiles/SCD_SCD.dir/all
 scd/CMakeFiles/V2SCD_Main.dir/all: scd/CMakeFiles/SCD_Scheduling.dir/all
 scd/CMakeFiles/V2SCD_Main.dir/all: scd/CMakeFiles/SCD_ParseNetlist.dir/all
+scd/CMakeFiles/V2SCD_Main.dir/all: CMakeFiles/Util_Log.dir/all
 	$(MAKE) -f scd/CMakeFiles/V2SCD_Main.dir/build.make scd/CMakeFiles/V2SCD_Main.dir/depend
 	$(MAKE) -f scd/CMakeFiles/V2SCD_Main.dir/build.make scd/CMakeFiles/V2SCD_Main.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/soler/FerretOT/emp-ot/testing/CMakeFiles --progress-num=16,17 "Built target V2SCD_Main"
@@ -344,7 +344,7 @@ scd/CMakeFiles/V2SCD_Main.dir/clean:
 scd/CMakeFiles/SCD_SCD_Evaluator.dir/all:
 	$(MAKE) -f scd/CMakeFiles/SCD_SCD_Evaluator.dir/build.make scd/CMakeFiles/SCD_SCD_Evaluator.dir/depend
 	$(MAKE) -f scd/CMakeFiles/SCD_SCD_Evaluator.dir/build.make scd/CMakeFiles/SCD_SCD_Evaluator.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/soler/FerretOT/emp-ot/testing/CMakeFiles --progress-num=9 "Built target SCD_SCD_Evaluator"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/soler/FerretOT/emp-ot/testing/CMakeFiles --progress-num=11 "Built target SCD_SCD_Evaluator"
 .PHONY : scd/CMakeFiles/SCD_SCD_Evaluator.dir/all
 
 # Build rule for subdir invocation for target.
@@ -368,15 +368,15 @@ scd/CMakeFiles/SCD_SCD_Evaluator.dir/clean:
 # Target rules for target scd/CMakeFiles/SCD_Evaluator_Main.dir
 
 # All Build rule for target.
-scd/CMakeFiles/SCD_Evaluator_Main.dir/all: CMakeFiles/Util_Util.dir/all
-scd/CMakeFiles/SCD_Evaluator_Main.dir/all: CMakeFiles/Util_Log.dir/all
-scd/CMakeFiles/SCD_Evaluator_Main.dir/all: scd/CMakeFiles/SCD_SCD_Evaluator.dir/all
 scd/CMakeFiles/SCD_Evaluator_Main.dir/all: scd/CMakeFiles/SCD_SCD.dir/all
 scd/CMakeFiles/SCD_Evaluator_Main.dir/all: scd/CMakeFiles/SCD_Scheduling.dir/all
 scd/CMakeFiles/SCD_Evaluator_Main.dir/all: scd/CMakeFiles/SCD_ParseNetlist.dir/all
+scd/CMakeFiles/SCD_Evaluator_Main.dir/all: CMakeFiles/Util_Util.dir/all
+scd/CMakeFiles/SCD_Evaluator_Main.dir/all: CMakeFiles/Util_Log.dir/all
+scd/CMakeFiles/SCD_Evaluator_Main.dir/all: scd/CMakeFiles/SCD_SCD_Evaluator.dir/all
 	$(MAKE) -f scd/CMakeFiles/SCD_Evaluator_Main.dir/build.make scd/CMakeFiles/SCD_Evaluator_Main.dir/depend
 	$(MAKE) -f scd/CMakeFiles/SCD_Evaluator_Main.dir/build.make scd/CMakeFiles/SCD_Evaluator_Main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/soler/FerretOT/emp-ot/testing/CMakeFiles --progress-num=5,6 "Built target SCD_Evaluator_Main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/soler/FerretOT/emp-ot/testing/CMakeFiles --progress-num=7,8 "Built target SCD_Evaluator_Main"
 .PHONY : scd/CMakeFiles/SCD_Evaluator_Main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -403,7 +403,7 @@ scd/CMakeFiles/SCD_Evaluator_Main.dir/clean:
 scd/CMakeFiles/SCD_V2SCD.dir/all:
 	$(MAKE) -f scd/CMakeFiles/SCD_V2SCD.dir/build.make scd/CMakeFiles/SCD_V2SCD.dir/depend
 	$(MAKE) -f scd/CMakeFiles/SCD_V2SCD.dir/build.make scd/CMakeFiles/SCD_V2SCD.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/soler/FerretOT/emp-ot/testing/CMakeFiles --progress-num=11 "Built target SCD_V2SCD"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/soler/FerretOT/emp-ot/testing/CMakeFiles --progress-num=13 "Built target SCD_V2SCD"
 .PHONY : scd/CMakeFiles/SCD_V2SCD.dir/all
 
 # Build rule for subdir invocation for target.
@@ -430,7 +430,7 @@ scd/CMakeFiles/SCD_V2SCD.dir/clean:
 scd/CMakeFiles/SCD_SCD.dir/all:
 	$(MAKE) -f scd/CMakeFiles/SCD_SCD.dir/build.make scd/CMakeFiles/SCD_SCD.dir/depend
 	$(MAKE) -f scd/CMakeFiles/SCD_SCD.dir/build.make scd/CMakeFiles/SCD_SCD.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/soler/FerretOT/emp-ot/testing/CMakeFiles --progress-num=8 "Built target SCD_SCD"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/soler/FerretOT/emp-ot/testing/CMakeFiles --progress-num=10 "Built target SCD_SCD"
 .PHONY : scd/CMakeFiles/SCD_SCD.dir/all
 
 # Build rule for subdir invocation for target.
@@ -457,7 +457,7 @@ scd/CMakeFiles/SCD_SCD.dir/clean:
 scd/CMakeFiles/SCD_Scheduling.dir/all:
 	$(MAKE) -f scd/CMakeFiles/SCD_Scheduling.dir/build.make scd/CMakeFiles/SCD_Scheduling.dir/depend
 	$(MAKE) -f scd/CMakeFiles/SCD_Scheduling.dir/build.make scd/CMakeFiles/SCD_Scheduling.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/soler/FerretOT/emp-ot/testing/CMakeFiles --progress-num=10 "Built target SCD_Scheduling"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/soler/FerretOT/emp-ot/testing/CMakeFiles --progress-num=12 "Built target SCD_Scheduling"
 .PHONY : scd/CMakeFiles/SCD_Scheduling.dir/all
 
 # Build rule for subdir invocation for target.
@@ -484,7 +484,7 @@ scd/CMakeFiles/SCD_Scheduling.dir/clean:
 scd/CMakeFiles/SCD_ParseNetlist.dir/all:
 	$(MAKE) -f scd/CMakeFiles/SCD_ParseNetlist.dir/build.make scd/CMakeFiles/SCD_ParseNetlist.dir/depend
 	$(MAKE) -f scd/CMakeFiles/SCD_ParseNetlist.dir/build.make scd/CMakeFiles/SCD_ParseNetlist.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/soler/FerretOT/emp-ot/testing/CMakeFiles --progress-num=7 "Built target SCD_ParseNetlist"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/soler/FerretOT/emp-ot/testing/CMakeFiles --progress-num=9 "Built target SCD_ParseNetlist"
 .PHONY : scd/CMakeFiles/SCD_ParseNetlist.dir/all
 
 # Build rule for subdir invocation for target.

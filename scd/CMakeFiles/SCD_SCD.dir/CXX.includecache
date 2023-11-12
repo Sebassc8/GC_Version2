@@ -26,18 +26,6 @@ emp-tool/emp-tool.h
 emp-ot/emp-ot.h
 /home/soler/FerretOT/emp-ot/testing/emp-ot/emp-ot.h
 
-/home/soler/FerretOT/emp-ot/testing/garbled_circuit_util.h
-cstdint
--
-string
--
-openssl/bn.h
--
-emp-tool/emp-tool.h
--
-emp-ot/emp-ot.h
-/home/soler/FerretOT/emp-ot/testing/emp-ot/emp-ot.h
-
 /home/soler/FerretOT/emp-ot/testing/log.h
 fstream
 -

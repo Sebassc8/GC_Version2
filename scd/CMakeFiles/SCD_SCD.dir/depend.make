@@ -3,7 +3,6 @@
 
 scd/CMakeFiles/SCD_SCD.dir/scd.cpp.o: BN.h
 scd/CMakeFiles/SCD_SCD.dir/scd.cpp.o: common.h
-scd/CMakeFiles/SCD_SCD.dir/scd.cpp.o: garbled_circuit_util.h
 scd/CMakeFiles/SCD_SCD.dir/scd.cpp.o: log.h
 scd/CMakeFiles/SCD_SCD.dir/scd.cpp.o: minunit.h
 scd/CMakeFiles/SCD_SCD.dir/scd.cpp.o: scd/scd.cpp
